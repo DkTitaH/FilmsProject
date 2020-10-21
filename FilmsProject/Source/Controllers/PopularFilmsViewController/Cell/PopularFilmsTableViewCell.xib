@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PopularFilmsTableViewCell" rowHeight="141" id="KGk-i7-Jjw" customClass="PopularFilmsTableViewCell" customModule="FilmsProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rgV-nT-QYI">
+                        <rect key="frame" x="0.0" y="10" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Pvp-jf-pjL"/>
+                            <constraint firstAttribute="height" constant="100" id="cpj-Z5-yVt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yq9-C1-hHK">
+                        <rect key="frame" x="115" y="50" width="190" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rgV-nT-QYI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="12G-AZ-r1i"/>
+                    <constraint firstAttribute="bottom" secondItem="rgV-nT-QYI" secondAttribute="bottom" constant="10" id="Buy-mb-7jL"/>
+                    <constraint firstItem="yq9-C1-hHK" firstAttribute="centerY" secondItem="rgV-nT-QYI" secondAttribute="centerY" id="au5-Ih-RKo"/>
+                    <constraint firstAttribute="trailing" secondItem="yq9-C1-hHK" secondAttribute="trailing" constant="15" id="p75-QF-qr8"/>
+                    <constraint firstItem="rgV-nT-QYI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="xDG-4S-uBr"/>
+                    <constraint firstItem="yq9-C1-hHK" firstAttribute="leading" secondItem="rgV-nT-QYI" secondAttribute="trailing" constant="15" id="zCz-L0-4qM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="filmImageView" destination="rgV-nT-QYI" id="Dpm-Qj-7L9"/>
+                <outlet property="title" destination="yq9-C1-hHK" id="kve-QH-MK5"/>
+            </connections>
+            <point key="canvasLocation" x="15.942028985507248" y="89.397321428571431"/>
+        </tableViewCell>
+    </objects>
+</document>
